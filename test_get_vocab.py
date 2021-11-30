@@ -16,6 +16,7 @@ def process(data):
               for i,s in attr['inter_label']:
                   vocab.add( (smiles, s) )
         except:
+          print('testing')
           print(line)
           raise
     return vocab
